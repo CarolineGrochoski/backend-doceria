@@ -1,0 +1,22 @@
+POST http://localhost:3333/doceria
+Content-Type: application/json
+
+{
+"Nome": "doceria teste",
+"description": "Este e o primeiro doce de Node.js com MySQL",
+"price": 900
+}
+###
+
+GET http://localhost:3333/doceria
+
+###
+PUT http://localhost:3333/doceria/id-da-doceria-a-ser-atualizado
+Content-Type: application/json
+{
+"Nome": "Auterei este doce",
+"description": "descrição atualizada",
+"price": 345
+}
+###
+DELETE http://localhost:3333/videos/id-da-doceria-a-ser-deletado
